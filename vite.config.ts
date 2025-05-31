@@ -15,8 +15,17 @@ export default defineConfig(({ mode }) => ({
     analog({
       ssr: true,
       nitro: {
-        preset: 'vercel'
+        preset: 'vercel',
+        vercel: {
+          regions: ['fra1'], // EU регіон для кращої латентності
+        },
+        compressPublicAssets: {
+          gzip: true,
+          brotli: true
+        },
+        minify: true
       },
+
     }),
   ],
 }));
