@@ -32,4 +32,4 @@ jobs:
           app_id: ${{ vars.APP_ID }}
           api_key: ${{ secrets.BUNNYNET_API_KEY }}
           container: Container-1
-          image_tag: "${{ github.sha }}"
+          image_tag: "v2"
