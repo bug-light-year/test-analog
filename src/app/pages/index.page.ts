@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -7,13 +8,7 @@ import { Component } from '@angular/core';
 
     <h3>The fullstack meta-framework for Angular!</h3>
 
-    <p class="read-the-docs">
-      <a href="https://analogjs.org" target="_blank">Docs</a> |
-      <a href="https://github.com/analogjs/analog" target="_blank">GitHub</a> |
-      <a href="https://github.com/sponsors/brandonroberts" target="_blank">
-        Sponsor
-      </a>
-    </p>
+    <a [routerLink]="['/', 'feed']" class="text-center text-blue">Go to feed</a>
   `,
   styles: `
     :host {
@@ -23,15 +18,14 @@ import { Component } from '@angular/core';
       align-items: center;
     }
 
-    .read-the-docs > * {
-      color: #fff;
-    }
-
     @media (prefers-color-scheme: light) {
       .read-the-docs > * {
         color: #213547;
       }
     }
   `,
+  imports: [
+    RouterLink
+  ]
 })
 export default class HomeComponent {}
