@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, input} from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './post.component.scss'
 })
 export class PostComponent {
-
+   public image = input<string>('https://analog-ssr.b-cdn.net/IMG_4210.PNG')
 }

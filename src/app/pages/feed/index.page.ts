@@ -8,7 +8,32 @@ import {PostComponent} from "../../components/post";
     <section class="max-w-[576px] mx-auto py-6">
       <h2 class="text-center font-bold text-4xl mb-8">Feed</h2>
 
-      <app-post />
+      <ul class="grid gap-4">
+        <li>
+            <app-post />
+        </li>
+        <li>
+          <app-post image="https://analog-ssr.b-cdn.net/IMG_42081.PNG" />
+        </li>
+        <li>
+          <app-post />
+        </li>
+        <li>
+          <app-post image="https://analog-ssr.b-cdn.net/IMG_42081.PNG" />
+        </li>
+        <li>
+          <app-post />
+        </li>
+        <li>
+          <app-post image="https://analog-ssr.b-cdn.net/IMG_42081.PNG" />
+        </li>
+        <li>
+          <app-post />
+        </li>
+        <li>
+          <app-post image="https://analog-ssr.b-cdn.net/IMG_42081.PNG" />
+        </li>
+      </ul>
     </section>
   `,
 })
